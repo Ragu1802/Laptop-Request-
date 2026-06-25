@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="dbf3509f832543d04fd9e270ceaad32b" label="Laptop Request" max_length="40" name="x_1877560_laptop_0_laptop_request" type="collection">
+        <element label="Description" max_length="40" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Justification" max_length="40" name="justification" type="string"/>
+        <element choice="3" label="Approval Status" max_length="40" name="approval_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Bending" sequence="2" value="bending"/>
+                <element inactive_on_update="false" label="Approval" sequence="0" value="approval"/>
+                <element inactive_on_update="false" label="Rejected" sequence="1" value="rejected"/>
+            </choice>
+        </element>
+        <element choice="3" label="laptop type" max_length="40" name="laptop_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Standard" sequence="0" value="standard"/>
+                <element inactive_on_update="false" label="Business" sequence="3" value="business"/>
+                <element inactive_on_update="false" label="Developer" sequence="1" value="developer"/>
+                <element inactive_on_update="false" label="Designer" sequence="2" value="designer"/>
+            </choice>
+        </element>
+        <element label="Delivery Date" max_length="40" name="delivery_date" type="glide_date"/>
+        <element choice="3" label="Task Status" max_length="40" name="task_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Open" sequence="0" value="open"/>
+                <element inactive_on_update="false" label="Waiting for delivery" sequence="2" value="waiting_for_delivery"/>
+                <element inactive_on_update="false" label="Completed" sequence="3" value="completed"/>
+                <element inactive_on_update="false" label="In process" sequence="1" value="in_process"/>
+            </choice>
+        </element>
+        <element label="Requester Name" max_length="32" name="employee_name" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="employee_name"/>
+        </index>
+    </element>
+</database>

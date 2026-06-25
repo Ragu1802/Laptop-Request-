@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>labelCacheCleanUpExecuted=true</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Request a laptop for offical use</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>laptop_request_approval_flow</internal_name>
+        <label_cache>[{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"be0592bc-b095-4314-bf6d-ae408f158c0b":["record"]},"attributes":{"default_search_field":"number"}},{"name":"Service Catalog_1.request_item.requested_for","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for","reference":"sys_user","reference_display":"Requested for","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"requested_for","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"be0592bc-b095-4314-bf6d-ae408f158c0b":["approval_conditions"]},"attributes":null},{"name":"be0592bc-b095-4314-bf6d-ae408f158c0b.approval_state","label":"1➛Approval State","reference":null,"reference_display":"Approval State","type":"choice","base_type":"choice","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0}],"usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Laptop Request Approval Flow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-23 06:58:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f2a9109b836543d04fd9e270ceaad3ff</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Laptop Request Approval Flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Laptop Request" source="x_1877560_laptop_0">c3b3585f832543d04fd9e270ceaad31d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Laptop Request">c3b3585f832543d04fd9e270ceaad31d</sys_scope>
+        <sys_update_name>sys_hub_flow_f2a9109b836543d04fd9e270ceaad3ff</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-23 07:05:52</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>444b949f836543d04fd9e270ceaad3bb</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=f2a9109b836543d04fd9e270ceaad3ff"/>
+    <sys_variable_value action="DELETE" query="document_key=f2a9109b836543d04fd9e270ceaad3ff"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=f2a9109b836543d04fd9e270ceaad3ff"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=f2a9109b836543d04fd9e270ceaad3ff^sys_idNOT IN3ea9509b836543d04fd9e270ceaad303"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>f2a9109b836543d04fd9e270ceaad3ff</id>
+        <name>Laptop Request Approval Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-23 06:58:52</sys_created_on>
+        <sys_id>3ea9509b836543d04fd9e270ceaad303</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-23 06:58:52</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=3ea9509b836543d04fd9e270ceaad303"/>
+    <sys_hub_flow_input action="DELETE" query="model=f2a9109b836543d04fd9e270ceaad3ff^sys_idNOT IN36c9189b836543d04fd9e270ceaad3d7,eec9dc5b836543d04fd9e270ceaad344"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Laptop Request Approval Flow">f2a9109b836543d04fd9e270ceaad3ff</model>
+        <model_id>f2a9109b836543d04fd9e270ceaad3ff</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f2a9109b836543d04fd9e270ceaad3ff</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>true</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-23 06:59:25</sys_created_on>
+        <sys_id>36c9189b836543d04fd9e270ceaad3d7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Laptop Request">c3b3585f832543d04fd9e270ceaad31d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-23 06:59:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=36c9189b836543d04fd9e270ceaad3d7"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Laptop Request Approval Flow">f2a9109b836543d04fd9e270ceaad3ff</model>
+        <model_id>f2a9109b836543d04fd9e270ceaad3ff</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_f2a9109b836543d04fd9e270ceaad3ff</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-23 06:59:24</sys_created_on>
+        <sys_id>eec9dc5b836543d04fd9e270ceaad344</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Laptop Request">c3b3585f832543d04fd9e270ceaad31d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-23 06:59:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=eec9dc5b836543d04fd9e270ceaad344"/>
+    <sys_hub_flow_output action="DELETE" query="model=f2a9109b836543d04fd9e270ceaad3ff"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=f2a9109b836543d04fd9e270ceaad3ff"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=f2a9109b836543d04fd9e270ceaad3ff^sys_idNOT IN7de95c9b836543d04fd9e270ceaad32f"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Laptop Request Approval Flow">f2a9109b836543d04fd9e270ceaad3ff</flow>
+        <generation_source/>
+        <name>Service Catalog</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-23 06:59:54</sys_created_on>
+        <sys_id>7de95c9b836543d04fd9e270ceaad32f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-23 06:59:54</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/61UTW/bMAz9K4FOG5CDk6zNmtuQoUCAbAWarpdiMBiJToTKkifJbrOg/31k/BF3M4YB3SkSTfI9Pj7l4SgMbNGIhbgt7ejauKfRyoqx0Dait2DuDgXSR7l3WiLF68NahygWD0eR3YMpOSFzHnfelVZRUrbu9cy4p6bfVxmrHHZcx+cNGpQRlVhkYAJS5Fvo377oELTdNYGXcQ92C/Lx77DnjNE7hRmUJr5/I4HvY5GDVRCdP5yTvMvvMC8MROyCziv0YjFJkrGomPLmEFaqRrWQM74vbcpcU82yV81cdFQ6ULPD/Tki99ooj5aUJwoFeOoQuf+xW9da28ehZM2gl8lVIufTq/l8msxmSZJdbDOZSTn/OEkuJxdXVDVshkGq8Tdn8L1dwLIN9gXA54hW9XT9U0SPoG6sOQf2NFg9Tw7PQf8kxA8J52VIs8lGmO6aNqI1e/0METbRlzKWvtOQmYWTec2/26Ua8lszXMKOHOr1yvHV0ENp5WFLNWjL/09w8maCUyZYS3dTRO3IVWLGO4et4ZpwCLUzPEoqSaPXux0VUpEzZW6/DhmoYd8zeBlog1iwS3jt7cva7N3Tbbvia21PlJqPxkkw3Q0iIW/LyPodBagKqIKtTyZA8TJmoksDITSEau+kP0rucXp0LXp6mvFUIr0u4icZdYXdP8AvVvv7+TgFAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=f2a9109b836543d04fd9e270ceaad3ff^sys_idNOT INf22a58db836543d04fd9e270ceaad37a"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Laptop Request Approval Flow">f2a9109b836543d04fd9e270ceaad3ff</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-23 07:01:04</sys_created_on>
+        <sys_id>f22a58db836543d04fd9e270ceaad37a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Laptop Request">c3b3585f832543d04fd9e270ceaad31d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-23 07:03:51</sys_updated_on>
+        <ui_id>be0592bc-b095-4314-bf6d-ae408f158c0b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YXU/bMBT9K1WeS+c0TUh5Q1RITBtIfL0gFLn2DfXkJiV2gK7qf99N7DRZC6UdRYKJF4TvtW+Oj8/xR29mjuDOgQO9wPPxz37sEbfrkhCCMGR9QlkYBH7Pc9pOQseAPelkkqUPVEYZUJUmmMBGXmTwXy7URNLpdR1hIyF5BolzcHPbdiY0wyoaMudgtpTaFIakQ5DY9dDiaJ1XOF4EqKeTIqF0JpI72/5hy1xUwTTjBaxu24EnDQkHxBNTqaDtjGnCqU6z6SKCpflZIuvASCTaTHhMn5T4jd9zA1J0jAGnyCwbi2ZkmTLheEA1RSQ503m2IC4VDJQhh0NMc6mPmjHT4WyiBU6yHKLpUFajU5mPk1PDiLMo0FiYXCEImBQzLaDbecQXo/TxvEJ5LJKSFJuUKaNy0aIaqRvmusAzc3Jx+RyrIGGM9aMxrgpGomJpRFkTIY47dxIbnVimj4hFibukQ1kxnw7yTTvHGB+U4WuaiWJyP7EMDm7bzzUXNRdXibjP4aTQUdAdBn0S8j0ek+FeL/T8PcqA7EHg+uDzgPmu58zbjpqqI0mVqonCFYru82KahjZLUGQ4LoawTEz0IcJ8AMvFvG1dRNy4C/1+lwxdQjxCQp+R0IOhtx/se5SHz4g0FiB5w0RVYtVMjcx2ptoA1Yqpji2sl+BaS5XNqOz0t63K8a1Tk9i5tUJCPpO38ONvsdb7eGh79RsKXrEAWys2aBwkv9I8S9Y4IBoJVSrjRSc0emzniA1AVo74blAuG2IZ/L/4wfvyw//vh/1wndQYqSWVAUNhNIwwm11A9oC8t44QuUzvIreTAR5xSkdCw3g+38GNawN8lRXOK4DLgK34ecrycmEEX1L/wGZaJ4Na/mS9/I1INlG/1/3S/ofUPvPXaSvu11LiOZJENez2NbHB9yttD3JoDQyAVUjV+4GNgOfShCMtVjb5C9uhrPTtUjQ3e39nm33vM231b39WRIt7L6oOzfNuj4rdPwd6a/UHDbEtbjQsTbgowKqGFcytHNRhMr26ee1UqBrAozjN5vPbVSO9ud52NtyAhsURg+5Rr9Fi7Vi/8+2gphXrXwds0tqwt6tD55Ndud7qw89iuSFbe51htbYMm7XJFItQ6aXkVx1zXnmgdWLy2zlgA1SVAy4trCWUVvNl87n3RTls6X3hbnnkGPE/q/UvpX8Ypd/+AZVZsTezFQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=f22a58db836543d04fd9e270ceaad37a"/>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=f2a9109b836543d04fd9e270ceaad3ff"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=f2a9109b836543d04fd9e270ceaad3ff^sys_idNOT IN17fa589b836543d04fd9e270ceaad323"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">dffa589b836543d04fd9e270ceaad321</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Laptop Request Approval Flow">f2a9109b836543d04fd9e270ceaad3ff</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-23 07:04:39</sys_created_on>
+        <sys_id>17fa589b836543d04fd9e270ceaad323</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Laptop Request">c3b3585f832543d04fd9e270ceaad31d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-23 07:05:41</sys_updated_on>
+        <ui_id>42a6d4ca-8825-416f-b003-de1db7e372f0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXW+bMBT9K5WfCTIQoiRvUapKk7ZVWqq+bBW6GNNYM5jZpilD+e+75iOJlkxLtT7uDZ/74XMu90BLVG2r2poHtTJGPJdk+fXJI6J0GD63RGRkSRYQ53FAYxaFsyikNJxPg3QWpUGYRcCnM+KREgqOmUyVmbBClQi9gKwd1rYpp/EiTNkkpYt4Mo2C6STNZ9kEa+k8D+I5o6kPVaUV1iTGguX7/bea0ijDPpkwlYTm8Z3asa2QmeaD1Ao0Mrdck2X7W+ha6RJSLjF1faL9wjhsUznIWC3K5+H8cSjdjKDSmaMSUo/wV8vLjCOJHKThHimgzMAq3ZCl1TUCmkN2X8rmkLEVpcVuxOW+GvGTu06Uusycoy7G++jhmAyz7eH8FiwglZrZWg+pbKsE46afSMZzqKVdn2J9wn3VqexKLKRyrFayLsrP/TDIocH4KhGpDZLglVPquA9C8s1W7b6MLO9E2U1lCErFQB5OYHF2aW0dn5ZwyQtslBT4+nGiidsB0RUjl8J/lnjwc6l2eKnbdx+YI+7jYMG/Q/y2gx9BC6fiE7bBYtwFkximRTVq6y4ne4+YxqwlGHPUiMNNftSOYa940Jb043ElXaMVXvzCBxl7b3BaTiEPFiy4vG4QXVitpAOOdlsNi3+zcYt/7p+z+NsMcQXDM0Pc9Hv+Z+5v8UbwF28MyFXmiOP/3vhnbziaKRjBku6/ge3c5+kdzfHklru/9DBsJgxye3DYh/Fv5QINbpRgp9BO6e9O1RHb/wKNdVeK9wYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=f2a9109b836543d04fd9e270ceaad3ff"/>
+    <sys_hub_flow_variable action="DELETE" query="model=f2a9109b836543d04fd9e270ceaad3ff"/>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f2a9109b836543d04fd9e270ceaad3ff</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-23 06:59:26</sys_created_on>
+        <sys_id>36c9189b836543d04fd9e270ceaad3f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Laptop Request" source="x_1877560_laptop_0">c3b3585f832543d04fd9e270ceaad31d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Laptop Request">c3b3585f832543d04fd9e270ceaad31d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-23 06:59:26</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f2a9109b836543d04fd9e270ceaad3ff</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-23 06:59:25</sys_created_on>
+        <sys_id>3ac9189b836543d04fd9e270ceaad3d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Laptop Request" source="x_1877560_laptop_0">c3b3585f832543d04fd9e270ceaad31d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Laptop Request">c3b3585f832543d04fd9e270ceaad31d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-23 06:59:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_f2a9109b836543d04fd9e270ceaad3ff"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_f2a9109b836543d04fd9e270ceaad3ff"/>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=f2a9109b836543d04fd9e270ceaad3ff"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=f2a9109b836543d04fd9e270ceaad3ff"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Laptop Request">c3b3585f832543d04fd9e270ceaad31d</application>
+        <file_path/>
+        <instance_id>d3cb1029db6e79d8ae4c9027c596193d</instance_id>
+        <instance_name>dev213242</instance_name>
+        <name>sys_hub_flow_f2a9109b836543d04fd9e270ceaad3ff</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;labelCacheCleanUpExecuted=true&lt;/attributes&gt;&lt;authored_on_release_version&gt;28100&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;compiler_build/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description&gt;Request a laptop for offical use&lt;/description&gt;&lt;display_name_after_preview/&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;generation_source/&gt;&lt;internal_name&gt;laptop_request_approval_flow&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"be0592bc-b095-4314-bf6d-ae408f158c0b":["record"]},"attributes":{"default_search_field":"number"}},{"name":"Service Catalog_1.request_item.requested_for","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for","reference":"sys_user","reference_display":"Requested for","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"requested_for","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"be0592bc-b095-4314-bf6d-ae408f158c0b":["approval_conditions"]},"attributes":null},{"name":"be0592bc-b095-4314-bf6d-ae408f158c0b.approval_state","label":"1➛Approval State","reference":null,"reference_display":"Approval State","type":"choice","base_type":"choice","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0}],"usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]&lt;/label_cache&gt;&lt;latest_snapshot/&gt;&lt;master_snapshot/&gt;&lt;master_snapshot_digest/&gt;&lt;name&gt;Laptop Request Approval Flow&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-23 06:58:52&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f2a9109b836543d04fd9e270ceaad3ff&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Laptop Request Approval Flow&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Laptop Request" source="x_1877560_laptop_0"&gt;c3b3585f832543d04fd9e270ceaad31d&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Laptop Request"&gt;c3b3585f832543d04fd9e270ceaad31d&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_f2a9109b836543d04fd9e270ceaad3ff&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-23 07:05:52&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;updation_source/&gt;&lt;version&gt;2&lt;/version&gt;&lt;version_record&gt;444b949f836543d04fd9e270ceaad3bb&lt;/version_record&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=f2a9109b836543d04fd9e270ceaad3ff"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=f2a9109b836543d04fd9e270ceaad3ff"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=f2a9109b836543d04fd9e270ceaad3ff"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=f2a9109b836543d04fd9e270ceaad3ff^sys_idNOT IN3ea9509b836543d04fd9e270ceaad303"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;f2a9109b836543d04fd9e270ceaad3ff&lt;/id&gt;&lt;name&gt;Laptop Request Approval Flow&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-23 06:58:52&lt;/sys_created_on&gt;&lt;sys_id&gt;3ea9509b836543d04fd9e270ceaad303&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-23 06:58:52&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=3ea9509b836543d04fd9e270ceaad303"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=f2a9109b836543d04fd9e270ceaad3ff^sys_idNOT IN36c9189b836543d04fd9e270ceaad3d7,eec9dc5b836543d04fd9e270ceaad344"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;sc_req_item&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="Laptop Request Approval Flow"&gt;f2a9109b836543d04fd9e270ceaad3ff&lt;/model&gt;&lt;model_id&gt;f2a9109b836543d04fd9e270ceaad3ff&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_f2a9109b836543d04fd9e270ceaad3ff&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;true&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-23 06:59:25&lt;/sys_created_on&gt;&lt;sys_id&gt;36c9189b836543d04fd9e270ceaad3d7&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Laptop Request"&gt;c3b3585f832543d04fd9e270ceaad31d&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-23 06:59:25&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=36c9189b836543d04fd9e270ceaad3d7"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;request_item&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;Request Item&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Laptop Request Approval Flow"&gt;f2a9109b836543d04fd9e270ceaad3ff&lt;/model&gt;&lt;model_id&gt;f2a9109b836543d04fd9e270ceaad3ff&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_f2a9109b836543d04fd9e270ceaad3ff&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="sc_req_item"&gt;sc_req_item&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-23 06:59:24&lt;/sys_created_on&gt;&lt;sys_id&gt;eec9dc5b836543d04fd9e270ceaad344&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Laptop Request"&gt;c3b3585f832543d04fd9e270ceaad31d&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-23 06:59:24&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=eec9dc5b836543d04fd9e270ceaad344"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=f2a9109b836543d04fd9e270ceaad3ff"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=f2a9109b836543d04fd9e270ceaad3ff"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=f2a9109b836543d04fd9e270ceaad3ff^sys_idNOT IN7de95c9b836543d04fd9e270ceaad32f"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Laptop Request Approval Flow"&gt;f2a9109b836543d04fd9e270ceaad3ff&lt;/flow&gt;&lt;generation_source/&gt;&lt;name&gt;Service Catalog&lt;/name&gt;&lt;published_version/&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-23 06:59:54&lt;/sys_created_on&gt;&lt;sys_id&gt;7de95c9b836543d04fd9e270ceaad32f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-23 06:59:54&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Service Catalog"&gt;c43a1011c36813002841b63b12d3ae15&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;H4sIAAAAAAAA/61UTW/bMAz9K4FOG5CDk6zNmtuQoUCAbAWarpdiMBiJToTKkifJbrOg/31k/BF3M4YB3SkSTfI9Pj7l4SgMbNGIhbgt7ejauKfRyoqx0Dait2DuDgXSR7l3WiLF68NahygWD0eR3YMpOSFzHnfelVZRUrbu9cy4p6bfVxmrHHZcx+cNGpQRlVhkYAJS5Fvo377oELTdNYGXcQ92C/Lx77DnjNE7hRmUJr5/I4HvY5GDVRCdP5yTvMvvMC8MROyCziv0YjFJkrGomPLmEFaqRrWQM74vbcpcU82yV81cdFQ6ULPD/Tki99ooj5aUJwoFeOoQuf+xW9da28ehZM2gl8lVIufTq/l8msxmSZJdbDOZSTn/OEkuJxdXVDVshkGq8Tdn8L1dwLIN9gXA54hW9XT9U0SPoG6sOQf2NFg9Tw7PQf8kxA8J52VIs8lGmO6aNqI1e/0METbRlzKWvtOQmYWTec2/26Ua8lszXMKOHOr1yvHV0ENp5WFLNWjL/09w8maCUyZYS3dTRO3IVWLGO4et4ZpwCLUzPEoqSaPXux0VUpEzZW6/DhmoYd8zeBlog1iwS3jt7cva7N3Tbbvia21PlJqPxkkw3Q0iIW/LyPodBagKqIKtTyZA8TJmoksDITSEau+kP0rucXp0LXp6mvFUIr0u4icZdYXdP8AvVvv7+TgFAAA=&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;service_catalog&lt;/trigger_type&gt;&lt;updation_source/&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=f2a9109b836543d04fd9e270ceaad3ff^sys_idNOT INf22a58db836543d04fd9e270ceaad37a"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Ask For Approval"&gt;f8f2e9920b10030085c083eb37673abd&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Laptop Request Approval Flow"&gt;f2a9109b836543d04fd9e270ceaad3ff&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-23 07:01:04&lt;/sys_created_on&gt;&lt;sys_id&gt;f22a58db836543d04fd9e270ceaad37a&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Laptop Request"&gt;c3b3585f832543d04fd9e270ceaad31d&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-23 07:03:51&lt;/sys_updated_on&gt;&lt;ui_id&gt;be0592bc-b095-4314-bf6d-ae408f158c0b&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1YXU/bMBT9K1WeS+c0TUh5Q1RITBtIfL0gFLn2DfXkJiV2gK7qf99N7DRZC6UdRYKJF4TvtW+Oj8/xR29mjuDOgQO9wPPxz37sEbfrkhCCMGR9QlkYBH7Pc9pOQseAPelkkqUPVEYZUJUmmMBGXmTwXy7URNLpdR1hIyF5BolzcHPbdiY0wyoaMudgtpTaFIakQ5DY9dDiaJ1XOF4EqKeTIqF0JpI72/5hy1xUwTTjBaxu24EnDQkHxBNTqaDtjGnCqU6z6SKCpflZIuvASCTaTHhMn5T4jd9zA1J0jAGnyCwbi2ZkmTLheEA1RSQ503m2IC4VDJQhh0NMc6mPmjHT4WyiBU6yHKLpUFajU5mPk1PDiLMo0FiYXCEImBQzLaDbecQXo/TxvEJ5LJKSFJuUKaNy0aIaqRvmusAzc3Jx+RyrIGGM9aMxrgpGomJpRFkTIY47dxIbnVimj4hFibukQ1kxnw7yTTvHGB+U4WuaiWJyP7EMDm7bzzUXNRdXibjP4aTQUdAdBn0S8j0ek+FeL/T8PcqA7EHg+uDzgPmu58zbjpqqI0mVqonCFYru82KahjZLUGQ4LoawTEz0IcJ8AMvFvG1dRNy4C/1+lwxdQjxCQp+R0IOhtx/se5SHz4g0FiB5w0RVYtVMjcx2ptoA1Yqpji2sl+BaS5XNqOz0t63K8a1Tk9i5tUJCPpO38ONvsdb7eGh79RsKXrEAWys2aBwkv9I8S9Y4IBoJVSrjRSc0emzniA1AVo74blAuG2IZ/L/4wfvyw//vh/1wndQYqSWVAUNhNIwwm11A9oC8t44QuUzvIreTAR5xSkdCw3g+38GNawN8lRXOK4DLgK34ecrycmEEX1L/wGZaJ4Na/mS9/I1INlG/1/3S/ofUPvPXaSvu11LiOZJENez2NbHB9yttD3JoDQyAVUjV+4GNgOfShCMtVjb5C9uhrPTtUjQ3e39nm33vM231b39WRIt7L6oOzfNuj4rdPwd6a/UHDbEtbjQsTbgowKqGFcytHNRhMr26ee1UqBrAozjN5vPbVSO9ud52NtyAhsURg+5Rr9Fi7Vi/8+2gphXrXwds0tqwt6tD55Ndud7qw89iuSFbe51htbYMm7XJFItQ6aXkVx1zXnmgdWLy2zlgA1SVAy4trCWUVvNl87n3RTls6X3hbnnkGPE/q/UvpX8Ypd/+AZVZsTezFQAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=f22a58db836543d04fd9e270ceaad37a"/&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=f2a9109b836543d04fd9e270ceaad3ff"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=f2a9109b836543d04fd9e270ceaad3ff^sys_idNOT IN17fa589b836543d04fd9e270ceaad323"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;dffa589b836543d04fd9e270ceaad321&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Laptop Request Approval Flow"&gt;f2a9109b836543d04fd9e270ceaad3ff&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;2&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-23 07:04:39&lt;/sys_created_on&gt;&lt;sys_id&gt;17fa589b836543d04fd9e270ceaad323&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Laptop Request"&gt;c3b3585f832543d04fd9e270ceaad31d&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-23 07:05:41&lt;/sys_updated_on&gt;&lt;ui_id&gt;42a6d4ca-8825-416f-b003-de1db7e372f0&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1VXW+bMBT9K5WfCTIQoiRvUapKk7ZVWqq+bBW6GNNYM5jZpilD+e+75iOJlkxLtT7uDZ/74XMu90BLVG2r2poHtTJGPJdk+fXJI6J0GD63RGRkSRYQ53FAYxaFsyikNJxPg3QWpUGYRcCnM+KREgqOmUyVmbBClQi9gKwd1rYpp/EiTNkkpYt4Mo2C6STNZ9kEa+k8D+I5o6kPVaUV1iTGguX7/bea0ijDPpkwlYTm8Z3asa2QmeaD1Ao0Mrdck2X7W+ha6RJSLjF1faL9wjhsUznIWC3K5+H8cSjdjKDSmaMSUo/wV8vLjCOJHKThHimgzMAq3ZCl1TUCmkN2X8rmkLEVpcVuxOW+GvGTu06Uusycoy7G++jhmAyz7eH8FiwglZrZWg+pbKsE46afSMZzqKVdn2J9wn3VqexKLKRyrFayLsrP/TDIocH4KhGpDZLglVPquA9C8s1W7b6MLO9E2U1lCErFQB5OYHF2aW0dn5ZwyQtslBT4+nGiidsB0RUjl8J/lnjwc6l2eKnbdx+YI+7jYMG/Q/y2gx9BC6fiE7bBYtwFkximRTVq6y4ne4+YxqwlGHPUiMNNftSOYa940Jb043ElXaMVXvzCBxl7b3BaTiEPFiy4vG4QXVitpAOOdlsNi3+zcYt/7p+z+NsMcQXDM0Pc9Hv+Z+5v8UbwF28MyFXmiOP/3vhnbziaKRjBku6/ge3c5+kdzfHklru/9DBsJgxye3DYh/Fv5QINbpRgp9BO6e9O1RHb/wKNdVeK9wYAAA==&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=f2a9109b836543d04fd9e270ceaad3ff"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=f2a9109b836543d04fd9e270ceaad3ff"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_f2a9109b836543d04fd9e270ceaad3ff&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-23 06:59:26&lt;/sys_created_on&gt;&lt;sys_id&gt;36c9189b836543d04fd9e270ceaad3f1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Laptop Request" source="x_1877560_laptop_0"&gt;c3b3585f832543d04fd9e270ceaad31d&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Laptop Request"&gt;c3b3585f832543d04fd9e270ceaad31d&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-23 06:59:26&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;request_item&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Request Item&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_f2a9109b836543d04fd9e270ceaad3ff&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-06-23 06:59:25&lt;/sys_created_on&gt;&lt;sys_id&gt;3ac9189b836543d04fd9e270ceaad3d3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Laptop Request" source="x_1877560_laptop_0"&gt;c3b3585f832543d04fd9e270ceaad31d&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Laptop Request"&gt;c3b3585f832543d04fd9e270ceaad31d&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-06-23 06:59:25&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_f2a9109b836543d04fd9e270ceaad3ff"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_f2a9109b836543d04fd9e270ceaad3ff"/&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=f2a9109b836543d04fd9e270ceaad3ff"/&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=f2a9109b836543d04fd9e270ceaad3ff"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-850809452</payload_hash>
+        <record_name>Laptop Request Approval Flow</record_name>
+        <reverted_from/>
+        <source>07b3585f832543d04fd9e270ceaad320</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-23 07:05:55</sys_created_on>
+        <sys_id>b14bd49f836543d04fd9e270ceaad3f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19ef34cc5ab0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-23 07:05:55</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>714bd49feb6543d0220093443778d5f8</update_guid>
+        <update_guid_history>714bd49feb6543d0220093443778d5f8:-850809452,b20bdc5f9b6543d033ae6ac1cb74ad74:1508069797,dbda585f8f6543d0aa588757579ffa4f:-300282567,1d5a501f4c6543d0f4ba6eef3adc867d:-1393627459,dbd9d89b306543d084a82350728d5368:2014989895,74d9589b326543d098b5ba59cfd470fa:-1476562783,b2a9149b016543d019e578261421d4e1:1990392480</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 03:45:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>0cfc1e156b934d648340d3f4ba7f6710</sys_id>
+        <sys_metadata>f2a9109b836543d04fd9e270ceaad3ff</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Laptop Request Approval Flow</sys_name>
+        <sys_package display_value="Laptop Request" source="x_1877560_laptop_0">c3b3585f832543d04fd9e270ceaad31d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Laptop Request">c3b3585f832543d04fd9e270ceaad31d</sys_scope>
+        <sys_scope_delete display_value="">bba5df01cdbe4c58b328623bbc8b1664</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_f2a9109b836543d04fd9e270ceaad3ff</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_f2a9109b836543d04fd9e270ceaad3ff">b14bd49f836543d04fd9e270ceaad3f9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 03:45:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
